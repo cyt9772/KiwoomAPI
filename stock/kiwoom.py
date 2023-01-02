@@ -72,6 +72,9 @@ class Kiwoom(QAxWidget):
         if rqname=="opt10081_req":
             self._opt10081(rqname,trcode)
 
+        if rqname=="opw00001_req":
+            self._opw00001(rqname, trcode)
+
         try:
             self.tr_event_loop.exit()
         except AttributeError:
@@ -96,6 +99,10 @@ class Kiwoom(QAxWidget):
             self.ohlcv['close'].append(int(close))
             self.ohlcv['volume'].append(int(volume))
 
+    def _opw00001(self, rqname, trcode):
+        self.d2_deposit=self._comm_get_data(trcode, "", rqname, 0, "d+2추정예수금")
+        self.d2_deposit=Kiwoom.change_format(self.d2_deposit)
+
     def send_order(self, rqname, screen_no, acc_no, order_type, code, quantity, price, hoga, order_no):
         self.dynamicCall("SendOrder(QString, QString, QString, int, QString, int, int, QString, QString)",
                          [rqname, screen_no, acc_no, order_type, code, quantity, price, hoga, order_no])
@@ -118,3 +125,20 @@ class Kiwoom(QAxWidget):
     def get_login_info(self, tag):
         ret=self.dynamicCall("GetLoginInfo(QString)", tag)
         return ret
+
+    @staticmethod
+    def change_format(data):
+        strip_data = data.lstrip('-0')
+
+        if strip_data == '' or strip_data == '.00':
+            strip_data = '0'
+
+        try:
+            format_data = format(int(strip_data), '-d')
+        except:
+            format_data = format(float(strip_data))
+
+        if data.startswith('-'):
+            format_data = '-' + format_data
+
+        return format_data

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7fa8780c-e3fc-401d-9664-ead7e1607aca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/stock/PyTrader.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/PyTrader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock/stock.ui" beforeDir="false" afterPath="$PROJECT_DIR$/stock/stock.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stock/PyTrader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="502">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -24,10 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stock/Kiwoom.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="111">
+              <caret line="103" column="50" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -79,8 +81,8 @@
         <option value="$PROJECT_DIR$/stock/stockdb.py" />
         <option value="$PROJECT_DIR$/stock/kiwoom.py" />
         <option value="$PROJECT_DIR$/stock/test.py" />
-        <option value="$PROJECT_DIR$/stock/Kiwoom.py" />
         <option value="$PROJECT_DIR$/stock/PyTrader.py" />
+        <option value="$PROJECT_DIR$/stock/Kiwoom.py" />
       </list>
     </option>
   </component>
@@ -287,13 +289,13 @@
     <frame x="21" y="19" width="1602" height="1318" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13618925" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13554987" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920127" visible="true" weight="0.25844595" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39907727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39864865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
@@ -306,13 +308,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16705883" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13618925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920127" visible="true" weight="0.2589346" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39907727" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49920127" visible="true" weight="0.25844595" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39864865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
@@ -555,8 +557,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stock/PyTrader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="502">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -565,7 +567,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stock/Kiwoom.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="111">
+          <caret line="103" column="50" selection-start-line="103" selection-start-column="50" selection-end-line="103" selection-end-column="50" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

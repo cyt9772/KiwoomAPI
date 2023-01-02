@@ -58,11 +58,19 @@ class MyWindow(QMainWindow, form_class):
 
         self.kiwoom.send_order("send_order_req","0101",account, order_type_lookup[order_type],code, num, price, hoga_lookup[hoga],"")
 
+    def query_deposit(self):
+        self.kiwoom.set_input_value("계좌번호", "8037555511")
+        self.kiwoom.set_input_value("비밀번호","1725")
+        self.kiwoom.comm_rq_data("opw00001_req", "opw00001",0,"3")
+
+        print(self.kiwoom.d2_deposit)
+
 
 if __name__=="__main__":
     app=QApplication(sys.argv)
     myWindow=MyWindow()
     myWindow.show()
+    myWindow.query_deposit()
     app.exec_()
 
 

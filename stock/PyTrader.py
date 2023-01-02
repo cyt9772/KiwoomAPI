@@ -11,6 +11,8 @@ class MyWindow(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
+        self.lineEdit.textChanged.connect(self.code_changed)
+
         self.kiwoom=Kiwoom()
         self.kiwoom.comm_connect()
 
@@ -31,6 +33,10 @@ class MyWindow(QMainWindow, form_class):
 
         self.statusbar.showMessage(state_msg+" | "+time_msg)
 
+    def code_changed(self):
+        code=self.lineEdit.text()
+        name=self.kiwoom.get_master_code_name(code)
+        self.lineEdit_2.setText(name)
 
 if __name__=="__main__":
     app=QApplication(sys.argv)
